@@ -55,12 +55,6 @@ module.exports = {
       ],
     },
     spacing: {
-
-
-
-
-
-
       0: "0px",
       0.5:"4px",
       1: "8px",
@@ -96,7 +90,6 @@ module.exports = {
           first: "#707070",
           DEFAULT: "#000",
           second: "#891818",
-          // third: "#FFE180",
         },
       },
       fontFamily: {

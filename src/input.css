@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-xl md:text-base font-medium;
+    font-family: "Roboto", sans-serif;
+  }
+  a {
+    @apply block;
+  }
+  h1{
+    @apply text-4xl  md:text-5xl font-black;
+  }
+  h2{
+    @apply text-3xl md:text-4xl;
+  }
+  img {
+	  object-fit:cover; 
+  }
+  a:hover{
+    opacity: .8;
+  }
+
+}
+
+@layer components {
+  .circle {
+    @apply before:inline-block before:w-[22px] before:h-[22px] before:bg-resume-second before:rounded-[50%] before:mr-2;
+  } 
+}
+
+@layer utilities {
+  .banner-bg{
+    background-image: url("../public/img/banner.png");
+  }
+
+  .swiper img {
+    width: 100%;
+    object-fit: cover; 
+  }
+  .swiper-pagination.swiper-pagination-bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 24px;
+  }
+  .swiper-pagination-bullet {
+  background-color: #525252;
+  opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 12px;
+    height: 12px;
+    background-color: #000;
+  }
+}
